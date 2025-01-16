@@ -1,0 +1,23 @@
+#go to mac M1 terminal, copy-paste the follwoing and run at a time
+
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+
+#After installing, close and reopen your terminal application or refresh it by running the following command:
+
+source ~/miniconda3/bin/activate #it will create a 'base' environment to run conda
+
+#to deactivate the 'base' environment
+
+conda deactivate
+
+#To initialize conda on all available shells, run the following command:
+
+conda init --all
+
+
+#Activation: Enables a Conda environment for use in the current shell session.
+#Shell: The interface where you type commands (e.g., bash, zsh).
+#Initialization (conda init): Automatically makes Conda available in your shell every time you open the terminal
